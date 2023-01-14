@@ -1,6 +1,10 @@
 ---
 import BaseLayout from '$layouts/BaseLayout.astro';
 
+interface Props {
+  frontmatter: MarkdownFrontmatter;
+}
+
 const {frontmatter} = Astro.props;
 ---
 
