@@ -9,7 +9,9 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  rules: {},
+  rules: {
+    'no-undef': 'off',
+  },
   overrides: [
     {
       files: ['*.astro'],
