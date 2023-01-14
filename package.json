@@ -1,5 +1,5 @@
 {
-  "name": "@example/minimal",
+  "name": "@krznbtni/astro-blog",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -21,10 +21,12 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "@typescript-eslint/parser": "^5.48.1",
+    "astro-eslint-parser": "^0.9.5",
     "eslint": "^8.31.0",
     "eslint-plugin-astro": "^0.21.1",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "prettier": "^2.8.3",
-    "prettier-plugin-astro": "^0.7.2"
+    "prettier-plugin-astro": "^0.7.2",
+    "typescript": "^4.9.4"
   }
 }
