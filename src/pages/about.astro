@@ -1,44 +1,53 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const pageTitle = "About Me";
+const pageTitle = 'About Me';
 
 const identity = {
-  firstName: "Krzn Btni",
-  country: "Sweden",
-  occupation: "Software Developer",
-  hobbies: ["eating", "coding", "sleeping"],
+  firstName: 'Krzn Btni',
+  country: 'Sweden',
+  occupation: 'Software Developer',
+  hobbies: ['eating', 'coding', 'sleeping'],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "Astro", "Svelte"];
+const skills = ['HTML', 'CSS', 'JavaScript', 'Astro', 'Svelte'];
 
 const happy = true;
 const finished = true;
 const goal = 3;
 
-const fontWeight = "bold";
-const skillColor = "navy";
-const textCase = "uppercase"
+const fontWeight = 'bold';
+const skillColor = 'navy';
+const textCase = 'uppercase';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <h2>... and my new Astro site!</h2>
-  
-  <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
 
-  <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+  <p>
+    I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I
+    built myself!
+  </p>
+
+  <p>
+    This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!
+  </p>
 
   <p>Here are a few facts about me:</p>
   <ul>
     <li>My name is {identity.firstName}.</li>
     <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-    {identity.hobbies.length >= 2 && 
-      <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-    } 
+    {
+      identity.hobbies.length >= 2 && (
+        <li>
+          Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}
+        </li>
+      )
+    }
   </ul>
   <p>My skills are:</p>
   <ul>
-    {skills.map((skill) => <li class="skill">{skill}</li>)}
+    {skills.map(skill => <li class="skill">{skill}</li>)}
   </ul>
 
   {happy && <p>I am happy to be learning Astro!</p>}
