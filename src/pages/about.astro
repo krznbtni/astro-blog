@@ -55,15 +55,21 @@ const textCase = 'uppercase';
   {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 </BaseLayout>
 
-<style define:vars={{fontWeight, skillColor, textCase}}>
+<style
+  define:vars={{
+    ['font-weight']: fontWeight,
+    ['skill-color']: skillColor,
+    ['text-case']: textCase,
+  }}
+>
   h1 {
-    color: purple;
     font-size: 4rem;
+    color: purple;
   }
 
   .skill {
-    color: var(--skillColor);
-    text-transform: var(--textCase);
-    font-weight: var(--fontWeight);
+    font-weight: var(--font-weight);
+    color: var(--skill-color);
+    text-transform: var(--text-case);
   }
 </style>
