@@ -2,17 +2,23 @@
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "eslint.validate": ["astro", "javascript", "javascriptreact", "typescript", "typescriptreact"],
-  "prettier.documentSelectors": ["**/*.astro"],
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "json.format.enable": false
+  "css.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.validate": ["astro", "javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "json.format.enable": false,
+  "less.validate": false,
+  "prettier.documentSelectors": ["**/*.astro"],
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.snippet": ["css", "less", "postcss"],
+  "stylelint.validate": ["css", "less", "postcss", "html", "astro"]
 }
