@@ -6,7 +6,10 @@
     "declarationDir": "./dist/types",
     "skipLibCheck": true,
     "paths": {
-      "$*": ["src/*"]
+      "$components/*": ["src/components/*"],
+      "$config": ["src/config/index.ts"],
+      "$config/*": ["src/config/*"],
+      "$layouts/*": ["src/layouts/*"]
     }
   }
 }
