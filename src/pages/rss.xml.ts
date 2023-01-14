@@ -1,10 +1,10 @@
 import rss from '@astrojs/rss';
+import {SITE_TITLE, SITE_DESCRIPTION, SITE_URL} from '$config';
 
 export const get = () =>
   rss({
-    title: 'Astro Learner | Blog',
-    description: 'My journey learning Astro',
-    site: 'https://blog.krznbtni.com',
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    site: SITE_URL,
     items: import.meta.glob('./**/*.md'),
-    customData: `<language>en-us</language>`,
   });
